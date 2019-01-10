@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<catalogue>
+  <mountains>
+    <mountain name="Витоша" id="Вит"/>
+    <mountain name="Пирин" id="Пир"/>
+    <mountain name="Предбалкан" id="ПрБ"/>
+    <mountain name="Рила" id="Рил"/>
+    <mountain name="Родопи" id="Род"/>
+    <mountain name="Средна гора" id="СрГ"/>
+    <mountain name="Стара планина" id="СтП"/>
+  </mountains>
+
+  <types>
+      <type name="хижа" id="X" description="Сградa в планината, отдалеченa от населени места, осигуряващa храна и подслон на туристи."/>
+      <type name="заслон" id="З" description="Осигурява временно укритие. Повечето имат възможност за преспиване и най-често са без хижари."/>
+      <type name="туристическа спалня" id="ТС" description="Помещениe, обслужванo от хижари и предлагащo само най-основни удобства."/>
+  </types>
+
+  <huts>
+    <hut mountainID="Вит" typeID="Х" image="aleko.jpg">
+      <name>Алеко</name>
+      <gps>
+          <altitude>1810м</altitude>
+          <latitude>42.582625N</latitude>
+          <longitude>23.292143E</longitude>
+      </gps>
+      <location>Витоша, местността Масловица, в североизточното подножие на връх Малък Резен (2191 м)</location>
+      <description>
+        <detail>Хижа Алеко е най-старата хижа на Витоша и сред първите построени в България.</detail>
+        <detail>Представлява масивна триетажна сграда.</detail>
+        <detail>Хижата е електрифицирана и водоснабдена, разполага с централно парно отопление.</detail>
+        <detail>Работи целогодишно и има лесен достъп до нея с кабинков лифт, по асфалтов път и дори чрез градски транспорт.</detail>
+        <detail>Хижа Алеко е основен изходен пункт за изкачване на Черни връх (2290 м.) и връх Камен дел (1862 м.).</detail>
+      </description>
+      <beds>88</beds>
+      <nearby>
+          <destination name="Меча поляна" time="0:10ч."/>
+          <destination name="Учебна база &quot;Академик&quot;" time="2:00ч."/>
+          <destination name="Местност Златните мостове" time="2:30ч."/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="Пир" typeID="З" image="koncheto.jpg">
+      <name>Кончето</name>
+      <gps>
+          <altitude>2782м</altitude>
+          <latitude>41.79284N</latitude>
+          <longitude>23.38055E</longitude>
+      </gps>
+      <location>Северен Пирин, на Мраморното главно пиринско било, югоизточно от връх Байови дупки</location>
+      <description>
+        <detail>Първият заслон е построен през 1955г. и е представлявал е дървена барака с двойни стени, врата и прозорец.</detail>
+        <detail>Прикрепен е към скалите със стоманени въжета.</detail>
+        <detail>Имал е площ от 8 квадратни метра и е бил обзаведен с дървени нарове.</detail>
+        <detail>В периода август/септември 2018 г., заслон Кончето е изцяло подменен с помощта на стотици доброволци.</detail>
+        <detail>Новият заслон има осветление, одеала и възможност за зареждане на GSM и GPS устройства.</detail>
+        <detail>Предназначен е за нощуване само в наложителни случаи и в близост няма вода.</detail>
+      </description>
+      <beds>12</beds>
+      <nearby>
+          <destination name="Връх Бански Суходол" time="0:30ч."/>
+          <destination name="Връх Байови дупки"/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="СрГ" typeID="ТС" image="yavoritsa.jpg">
+      <name>Яворица</name>
+      <gps>
+          <altitude>545м</altitude>
+          <latitude>42.333035N</latitude>
+          <longitude>23.872152E</longitude>
+      </gps>
+      <location>В град Момин проход, на границата на Септемврийски рид и планина Еледжик, Ихтиманска Средна гора</location>
+      <description>
+        <detail>Водоснабдена, електрифицирана, с локално парно отопление.</detail>
+        <detail>В туристическата спалня няма ресторант, непосредствено до нея се намира ресторант Момин проход.</detail>
+        <detail>Предлага се барбекю, на което гостите на хотела могат сами да приготвят храна.</detail>
+      </description>
+      <beds>45</beds>
+      <nearby>
+          <destination name="Ж.П. спирка Момин проход" time="0:20"/>
+          <destination name="Хижа &quot;Еледжик&quot;" time="3:30ч."/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="Рил" typeID="Х" image="malyovitsa.jpg">
+      <name>Мальовица</name>
+      <gps>
+          <altitude>1989м</altitude>
+          <latitude>42.1888167N</latitude>
+          <longitude>23.3742446E</longitude>
+      </gps>
+      <location>Северозападна Рила, на левия бряг на река Мальовица</location>
+      <description>
+        <detail>Представлява комплекс от две сгради (стара и нова) и бунгала с общ капацитет 125 места.</detail>
+        <detail>Хижа Мальовица е сред най-големите в Рила.</detail>
+        <detail>Хижата е снабдена с метеорологична станция и уеб камера, с която може да се добие допълнителна представа в реално време.</detail>
+        <detail>Районът разполага със ски - писта, съоръжена с влек.</detail>
+        <detail>Околностите предлагат много добри условия за алпинизъм.</detail>
+      </description>
+      <beds>125</beds>
+      <nearby>
+          <destination name="Мальовишките езера" time="1:15ч."/>
+          <destination name="Заслон &quot;БАК&quot;" time="1:30ч."/>
+          <destination name="Връх Мальовица (2729 м)" time="3:00ч."/>
+          <destination name="Рилски манастир" time="5:30"/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="Род" typeID="ТС" image="batak.jpg">
+      <name>Коларова къща</name>
+      <gps>
+          <altitude>1035м</altitude>
+          <latitude>41.910453N</latitude>
+          <longitude>24.268799E</longitude>
+      </gps>
+      <location>На ул."Тодор Коларов" №15, в град Батак, Родопите, дял Баташка планина</location>
+      <description>
+        <detail>Намира се в началото на града, като се идва по шосето от гр. Пещера.</detail>
+        <detail>Къщата представлява масивна двуетажна сграда във възрожденски архитектурен стил.</detail>
+        <detail>Сградата е електрифицирана и водоснабдена, с вътрешна баня.</detail>
+        <detail>Най-голям интерес за туристите представлява историческата каменна църква, строена през 1813 г., в която са събрани костите на жертвите от Априлското въстание от гр. Батак.</detail>
+        <detail>Други забележителности са историческият музей и вековният орех, както и многобройните стари къщи.</detail>
+      </description>
+      <beds>20</beds>
+      <nearby>
+          <destination name="Автогара &quot;Батак&quot;" time="0:8ч."/>
+          <destination name="Язовир &quot;Батак&quot;"/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="СтП" typeID="Х" image="vasillevski.jpg">
+      <name>Васил Левски</name>
+      <gps>
+          <altitude>1351м</altitude>
+          <latitude>42.7047615N</latitude>
+          <longitude>24.8524153E</longitude>
+      </gps>
+      <location>В местността Голяма гюрля, на границата между Троянска и Калоферска планина, дялове на Средна Стара планина.</location>
+      <description>
+        <detail>Построена е през 1925 г. под името Юмрукчал, но по-късно изгаря.</detail>
+        <detail>Възстановена и разширена е, а от 1954 г. носи името на Апостола.</detail>
+        <detail>Освен основната сграда с капацитет 70 места разполага и със сезонно бунгало с 12 легла.</detail>
+        <detail>Захранва се от ВЕЦ.</detail>
+        <detail>Хижата е резервен пункт от европейски маршрут E3 (Ком-Емине).</detail>
+      </description>
+      <beds>82</beds>
+      <nearby>
+          <destination name="Водопад &quot;Карловско пръскало&quot; (висок 26м)" time="0:10ч."/>
+          <destination name="Хижа &quot;Балкански рози&quot;" time="1:15ч."/>
+          <destination name="Връх Костенурката (2035м)" time="1:30ч."/>
+      </nearby>
+    </hut>
+
+
+    <hut mountainID="Вит" typeID="Х" image="kamendel.jpg">
+      <name>Камен дел</name>
+      <gps>
+          <altitude>1496м</altitude>
+          <latitude>42.62488N</latitude>
+          <longitude>23.265933E</longitude>
+      </gps>
+      <location>На Витоша, в местността Пожара</location>
+      <description>
+        <detail>Хижа Камен дел представлява масивна двуетажна сграда с капацитет от 30 легла и столова с капацитет 50 места.</detail>
+        <detail>Стаите са с по 2, 3, 4 или 6 легла.</detail>
+        <detail>Помещенията се отопляват с електричество и печка на двърдо гориво.</detail>
+        <detail>Хижата разполага с вътрешна баня и тоалетна.</detail>
+        <detail>Камен дел предлага кухня и скара на дървени въглища.</detail>
+        <detail>На разположение на туристите са още интернет и телевизия.</detail>
+      </description>
+      <beds>30</beds>
+      <nearby>
+          <destination name="Хижа &quot;Есперанто&quot;" time="0:15ч."/>
+          <destination name="Почивен дом &quot;Средец&quot;" time="0:15ч."/>
+          <destination name="Боянски водопад (висок 30 м)" time="0:45ч."/>
+      </nearby>
+    </hut>
+  </huts>
+</catalogue>
