@@ -4,4 +4,6 @@
 
 #### Validate XML file using DTD: `./xml.sh -d` or `./xml.sh --validate-with-dtd`
 
+#### Generate PDF file form XSL: `./xml.sh -p` or `./xml.sh --generate-pdf`
+
 #### For help: `./xml.sh`
