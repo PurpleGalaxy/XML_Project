@@ -22,8 +22,11 @@
   </xsl:template>
 
   <xsl:template match="catalogue/huts/hut">
+    <fo:block page-break-before="always" />
+    <fo:block>
+      <fo:external-graphic content-width="150mm"  src="{@image}" />
+    </fo:block>
     <xsl:apply-templates select="name" />
-    --
   </xsl:template>
 
 </xsl:stylesheet>
