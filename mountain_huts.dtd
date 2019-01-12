@@ -1,0 +1,40 @@
+
+<!ELEMENT catalogue ( mountains, types, huts ) >
+
+<!ELEMENT mountains ( mountain+ ) >
+<!ELEMENT types ( type+ ) >
+<!ELEMENT huts ( hut+ ) >
+
+<!ELEMENT mountain EMPTY >
+<!ATTLIST mountain id ID #REQUIRED >
+<!ATTLIST mountain name CDATA #REQUIRED >
+
+<!ELEMENT type EMPTY >
+<!ATTLIST type id ID #REQUIRED >
+<!ATTLIST type name CDATA #REQUIRED >
+<!ATTLIST type description CDATA #IMPLIED>
+
+
+<!ELEMENT hut (name, gps, location, description?, beds?, nearby?) >
+<!ATTLIST hut mountainID IDREF #REQUIRED >
+<!ATTLIST hut typeID IDREF #REQUIRED >
+<!ATTLIST hut image CDATA #IMPLIED >
+
+<!ELEMENT name (#PCDATA) >
+
+<!ELEMENT gps (altitude, latitude, longitude) >
+<!ELEMENT altitude (#PCDATA) >
+<!ELEMENT latitude (#PCDATA) >
+<!ELEMENT longitude (#PCDATA) >
+
+<!ELEMENT location (#PCDATA) >
+
+<!ELEMENT description (detail)+ >
+<!ELEMENT detail (#PCDATA) >
+
+<!ELEMENT beds (#PCDATA) >
+
+<!ELEMENT nearby (destination)+ >
+<!ELEMENT destination EMPTY>
+<!ATTLIST destination name CDATA #REQUIRED >
+<!ATTLIST destination time CDATA #IMPLIED >
