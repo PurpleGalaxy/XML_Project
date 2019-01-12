@@ -20,5 +20,6 @@ case $1 in
         echo "Usage: $0 options"
         echo "    -x, --validate-xml : Validate xml file"
         echo "    -d, --validate-with-dtd : Validate xml file using dtd"
+        echo "    -p, --generate-pdf : Generate pdf using the xml and xsl file"
         ;;
 esac
