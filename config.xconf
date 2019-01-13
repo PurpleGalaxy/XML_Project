@@ -81,6 +81,9 @@ the location of this file.
         <font embed-url="Calibri.ttf" embedding-mode="subset">
           <font-triplet name="Calibri" style="normal" weight="normal"/>
         </font>
+        <font embed-url="Calibri Bold.ttf" embedding-mode="subset">
+          <font-triplet name="Calibri" style="normal" weight="bold"/>
+        </font>
 
         <font embed-url="Monotype-Corsiva.ttf" embedding-mode="subset">
           <font-triplet name="Monotype Corsiva" style="normal" weight="bold"/>

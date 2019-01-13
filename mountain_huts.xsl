@@ -26,7 +26,7 @@
 
     <fo:block position="relative" text-align = "center" font-family="Calibri" font-weight="normal" font-size="36pt" color="#145A32" margin-bottom="0.8cm">
       <xsl:apply-templates select="@typeID"/>
-      <fo:inline position="relative" text-align = "center" font-family="Monotype Corsiva" font-weight="bold" font-size="48pt">
+      <fo:inline position="relative" text-align = "center" font-weight="bold" font-size="48pt">
         <xsl:apply-templates select="name"/>
       </fo:inline>
     </fo:block>
