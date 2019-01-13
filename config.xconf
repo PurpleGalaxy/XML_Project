@@ -82,6 +82,10 @@ the location of this file.
           <font-triplet name="Calibri" style="normal" weight="normal"/>
         </font>
 
+        <font embed-url="Monotype-Corsiva.ttf" embedding-mode="subset">
+          <font-triplet name="Monotype Corsiva" style="normal" weight="bold"/>
+        </font>
+
         <!-- auto-detect fonts -->
         <auto-detect/>
 
