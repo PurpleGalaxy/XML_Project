@@ -37,14 +37,14 @@
 
     <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
       <xsl:text>Планина:</xsl:text>
-      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri" font-weight="normal">
         <xsl:apply-templates select="@mountainID"/>
       </fo:inline>
     </fo:block>
 
     <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
       <xsl:text>Разположение:</xsl:text>
-      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri" font-weight="normal">
         <xsl:apply-templates select="location"/>
       </fo:inline>
     </fo:block>
@@ -89,14 +89,14 @@
 
     <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
       <xsl:text>Описание:</xsl:text>
-      <fo:inline position="relative" text-align = "justify" padding-left="3mm" font-family="Calibri">
+      <fo:inline position="relative" text-align = "justify" padding-left="3mm" font-family="Calibri" font-weight="normal">
       <xsl:apply-templates select="description"/>
       </fo:inline>
     </fo:block>
 
     <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
       <xsl:text>Леглова база:</xsl:text>
-      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri" font-weight="normal">
         <xsl:apply-templates select="beds"/>
       </fo:inline>
     </fo:block>
@@ -105,7 +105,7 @@
       <xsl:when test="./nearby">
         <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black">
           Обекти в близост:
-          <fo:block position="relative" margin-left="4mm" font-family="Calibri" font-size="14pt" color="black">
+          <fo:block position="relative" margin-left="4mm" font-family="Calibri" font-weight="normal" font-size="14pt" color="black" >
               <xsl:apply-templates select="nearby"/>
           </fo:block>
         </fo:block>
