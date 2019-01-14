@@ -135,20 +135,12 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
-  <xsl:template match="gps">
-    Координати:
-    • Надморска височина: <xsl:value-of select="./altitude"/>
-    • Географска ширина: <xsl:value-of select="./latitude"/>
-    • Географска дължина: <xsl:value-of select="./longitude"/>
-  </xsl:template>
-
   <xsl:template match="description">
     <xsl:for-each select="./detail">
       <xsl:value-of select="."/>
       <xsl:text> </xsl:text>
     </xsl:for-each>
   </xsl:template>
-
 
   <xsl:template match="nearby">
     <xsl:for-each select="./destination">
