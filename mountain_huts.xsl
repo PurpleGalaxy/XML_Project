@@ -7,7 +7,7 @@
     <fo:root>
       <fo:layout-master-set>
         <fo:simple-page-master master-name="A4-portrait"
-              page-height="29.7cm" page-width="21.0cm" margin="2cm">
+              page-height="29.7cm" page-width="21.0cm" margin="1.5cm">
           <fo:region-body/>
         </fo:simple-page-master>
       </fo:layout-master-set>
@@ -35,20 +35,83 @@
       <fo:external-graphic content-width="130mm"  src="./images/{@image}"/>
     </fo:block>
 
-    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black">
+    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
       <xsl:text>Планина:</xsl:text>
-      <fo:inline position="relative" padding-left="4mm" font-family="Calibri">
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
         <xsl:apply-templates select="@mountainID"/>
       </fo:inline>
     </fo:block>
 
-
-
-        <xsl:apply-templates select="gps"/>
+    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
+      <xsl:text>Разположение:</xsl:text>
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
         <xsl:apply-templates select="location"/>
-        <xsl:apply-templates select="description"/>
+      </fo:inline>
+    </fo:block>
+
+    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
+      <xsl:text>Координати:</xsl:text>
+    </fo:block>
+    <fo:table height="100px" width="450px">
+  	<fo:table-header>
+  		<fo:table-row>
+  			<fo:table-cell padding-right="10mm" font-family="Calibri" font-weight="bold" font-size="12pt" text-align="center">
+  				<fo:block>Надморска височина</fo:block>
+  			</fo:table-cell>
+  			<fo:table-cell padding-right="10mm" font-family="Calibri" font-weight="bold" font-size="12pt" text-align="center">
+  				<fo:block>Географска ширина</fo:block>
+  			</fo:table-cell>
+        <fo:table-cell padding-right="10mm" font-family="Calibri" font-weight="bold" font-size="12pt" text-align="center">
+          <fo:block>Географска дължина</fo:block>
+        </fo:table-cell>
+  		</fo:table-row>
+  	</fo:table-header>
+      <fo:table-body>
+    		<fo:table-row>
+    			<fo:table-cell padding-right="3mm" padding-before="2mm" padding-after="2mm">
+    				<fo:block text-align="center">
+    					<xsl:value-of select="./gps/altitude"/>
+    				</fo:block>
+    			</fo:table-cell>
+    			<fo:table-cell padding-right="3mm" padding-before="2mm" padding-after="2mm">
+    				<fo:block text-align="center">
+    					<xsl:value-of select="./gps/latitude"/>
+    				</fo:block>
+    			</fo:table-cell>
+          <fo:table-cell padding-right="3mm" padding-before="2mm" padding-after="2mm">
+            <fo:block text-align="center">
+              <xsl:value-of select="./gps/longitude"/>
+            </fo:block>
+          </fo:table-cell>
+    		</fo:table-row>
+      </fo:table-body>
+    </fo:table>
+
+    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
+      <xsl:text>Описание:</xsl:text>
+      <fo:inline position="relative" text-align = "justify" padding-left="3mm" font-family="Calibri">
+      <xsl:apply-templates select="description"/>
+      </fo:inline>
+    </fo:block>
+
+    <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black" margin-bottom="0.4cm">
+      <xsl:text>Леглова база:</xsl:text>
+      <fo:inline position="relative" padding-left="3mm" font-family="Calibri">
         <xsl:apply-templates select="beds"/>
-        <xsl:apply-templates select="nearby"/>
+      </fo:inline>
+    </fo:block>
+
+    <xsl:choose>
+      <xsl:when test="./nearby">
+        <fo:block position="relative" font-family="Calibri" font-weight="bold" font-size="14pt" color="black">
+          Обекти в близост:
+          <fo:block position="relative" margin-left="4mm" font-family="Calibri" font-size="14pt" color="black">
+              <xsl:apply-templates select="nearby"/>
+          </fo:block>
+        </fo:block>
+      </xsl:when>
+    </xsl:choose>
+
   </xsl:template>
 
   <xsl:template match="@typeID">
@@ -69,7 +132,7 @@
   </xsl:template>
 
   <xsl:template match="location">
-    Разположение: <xsl:value-of select="."/>
+    <xsl:value-of select="."/>
   </xsl:template>
 
   <xsl:template match="gps">
@@ -79,13 +142,24 @@
     • Географска дължина: <xsl:value-of select="./longitude"/>
   </xsl:template>
 
+  <xsl:template match="description">
+    <xsl:for-each select="./detail">
+      <xsl:value-of select="."/>
+      <xsl:text> </xsl:text>
+    </xsl:for-each>
+  </xsl:template>
 
 
-
-
-
-
-
-
+  <xsl:template match="nearby">
+    <xsl:for-each select="./destination">
+      • <xsl:value-of select="@name" />
+      <xsl:choose>
+        <xsl:when test="@time">
+          <xsl:text> - </xsl:text>
+          <xsl:value-of select="@time" />
+        </xsl:when>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:template>
 
 </xsl:stylesheet>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!DOCTYPE catalogue SYSTEM "mountain_huts.dtd">
 <?xml-stylesheet type="text/xsl" href="mountain_huts.xsl"?>
-
 
 <catalogue>
   <mountains>
@@ -84,7 +84,7 @@
       </description>
       <beds>45</beds>
       <nearby>
-          <destination name="Ж.П. спирка Момин проход" time="0:20"/>
+          <destination name="Ж.П. спирка Момин проход" time="0:20ч."/>
           <destination name="Хижа &quot;Еледжик&quot;" time="3:30ч."/>
       </nearby>
     </hut>
@@ -110,7 +110,7 @@
           <destination name="Мальовишките езера" time="1:15ч."/>
           <destination name="Заслон &quot;БАК&quot;" time="1:30ч."/>
           <destination name="Връх Мальовица (2729 м)" time="3:00ч."/>
-          <destination name="Рилски манастир" time="5:30"/>
+          <destination name="Рилски манастир" time="5:30ч."/>
       </nearby>
     </hut>
 
@@ -131,10 +131,6 @@
         <detail>Други забележителности са историческият музей и вековният орех, както и многобройните стари къщи.</detail>
       </description>
       <beds>20</beds>
-      <nearby>
-          <destination name="Автогара &quot;Батак&quot;" time="0:8ч."/>
-          <destination name="Язовир &quot;Батак&quot;"/>
-      </nearby>
     </hut>
 
 
