@@ -1,7 +1,7 @@
 # XML Project - Mountain Huts
 
 
-#### First, you need to install `xmlto` and `fop` packages on your system.
+#### First, you need to install `xmllint` and `fop` packages on your system.
 
 
 #### Validate XML: `./xml.sh -x` or `./xml.sh --validate-xml`
