@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!DOCTYPE catalogue SYSTEM "mountain_huts.dtd">
+<!-- the connection with the DTD file does not work really well with fop, uncomment if needed -->
+<!-- <!DOCTYPE catalogue SYSTEM "mountain_huts.dtd"> -->
 <?xml-stylesheet type="text/xsl" href="mountain_huts.xsl"?>
 
 <catalogue>
